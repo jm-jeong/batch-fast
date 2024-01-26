@@ -2,7 +2,6 @@ package com.example.batchdemo.batch;
 
 import com.example.batchdemo.model.Customer;
 import com.example.batchdemo.repository.CustomerRepository;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -13,7 +12,6 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 @SpringBootTest
@@ -24,7 +22,7 @@ class DormantBatchJobTest {
     private CustomerRepository customerRepository;
 
     @Autowired
-    private DormantBatchJob dormantBatchJob;
+    private Job dormantBatchJob;
 
     @BeforeEach
     public void setup() {
@@ -79,7 +77,7 @@ class DormantBatchJobTest {
         saveCustomer(366);
         saveCustomer(366);
 
-        //wehn
+        //when
         JobExecution result = dormantBatchJob.execute();
 
         //then
@@ -113,7 +111,7 @@ class DormantBatchJobTest {
     void test4() {
 
         //given
-        final DormantBatchJob dormantBatchJob = new DormantBatchJob(null);
+        final Job dormantBatchJob = new Job(null, null);
 
         //when
         final JobExecution result = dormantBatchJob.execute();
