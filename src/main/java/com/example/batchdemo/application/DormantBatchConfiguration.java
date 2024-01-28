@@ -1,8 +1,7 @@
 package com.example.batchdemo.application;
 
 import com.example.batchdemo.batch.Job;
-import com.example.batchdemo.batch.SimpleTasklet;
-import com.example.batchdemo.model.Customer;
+import com.example.batchdemo.batch.TaskletJob;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,7 +16,7 @@ public class DormantBatchConfiguration {
             DormantBatchJobExecutionListener listener
 
     ) {
-        return Job.builder()
+        return TaskletJob.builder()
                 .itemReader(itemReader)
                 .itemProcessor(itemProcessor)
                 .itemWriter(itemWriter)
