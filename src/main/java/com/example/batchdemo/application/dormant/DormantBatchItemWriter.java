@@ -1,9 +1,9 @@
-package com.example.batchdemo.application;
+package com.example.batchdemo.application.dormant;
 
 import com.example.batchdemo.batch.ItemWriter;
-import com.example.batchdemo.model.Customer;
-import com.example.batchdemo.repository.CustomerRepository;
-import com.example.batchdemo.service.EmailProvider;
+import com.example.batchdemo.customer.Customer;
+import com.example.batchdemo.customer.CustomerRepository;
+import com.example.batchdemo.EmailProvider;
 import org.springframework.stereotype.Component;
 
 @Component

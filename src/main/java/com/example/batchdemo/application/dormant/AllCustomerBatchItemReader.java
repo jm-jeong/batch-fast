@@ -1,19 +1,19 @@
-package com.example.batchdemo.application;
+package com.example.batchdemo.application.dormant;
 
 import com.example.batchdemo.batch.ItemReader;
-import com.example.batchdemo.model.Customer;
-import com.example.batchdemo.repository.CustomerRepository;
+import com.example.batchdemo.customer.Customer;
+import com.example.batchdemo.customer.CustomerRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DormantBatchItemReader implements ItemReader<Customer> {
+public class AllCustomerBatchItemReader implements ItemReader<Customer> {
     private final CustomerRepository customerRepository;
     private int pageNo = 0;
 
-    public DormantBatchItemReader(CustomerRepository customerRepository) {
+    public AllCustomerBatchItemReader(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 

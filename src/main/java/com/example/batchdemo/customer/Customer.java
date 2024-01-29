@@ -1,4 +1,4 @@
-package com.example.batchdemo.model;
+package com.example.batchdemo.customer;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

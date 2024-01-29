@@ -1,7 +1,7 @@
-package com.example.batchdemo.application;
+package com.example.batchdemo.application.dormant;
 
 import com.example.batchdemo.batch.ItemProcessor;
-import com.example.batchdemo.model.Customer;
+import com.example.batchdemo.customer.Customer;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;

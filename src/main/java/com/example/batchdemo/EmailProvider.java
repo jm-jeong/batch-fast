@@ -1,4 +1,4 @@
-package com.example.batchdemo.service;
+package com.example.batchdemo;
 
 import lombok.extern.slf4j.Slf4j;
 

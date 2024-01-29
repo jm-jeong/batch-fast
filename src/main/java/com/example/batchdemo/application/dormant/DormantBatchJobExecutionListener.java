@@ -1,8 +1,8 @@
-package com.example.batchdemo.application;
+package com.example.batchdemo.application.dormant;
 
 import com.example.batchdemo.batch.JobExecution;
 import com.example.batchdemo.batch.JobExecutionListener;
-import com.example.batchdemo.service.EmailProvider;
+import com.example.batchdemo.EmailProvider;
 import org.springframework.stereotype.Component;
 
 @Component
